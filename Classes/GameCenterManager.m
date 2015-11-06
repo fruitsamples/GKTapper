@@ -3,7 +3,7 @@
  File: GameCenterManager.m
  Abstract: Basic introduction to GameCenter
  
- Version: 1.0
+ Version: 1.1
  
  Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple Inc.
  ("Apple") in consideration of your agreement to the following terms, and your
@@ -184,7 +184,7 @@
 			if(error == NULL)
 			{
 				NSMutableDictionary* tempCache= [NSMutableDictionary dictionaryWithCapacity: [scores count]];
-				for (GKAchievement* score in tempCache)
+				for (GKAchievement* score in scores)
 				{
 					[tempCache setObject: score forKey: score.identifier];
 				}
